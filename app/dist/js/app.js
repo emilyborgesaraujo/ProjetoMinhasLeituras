@@ -1,8 +1,10 @@
+import { LeituraController } from "./controllers/leitura-controller.js";
+const controller = new LeituraController();
 const form = document.querySelector('.form');
 if (form) {
     form.addEventListener('submit', event => {
         event.preventDefault();
-        alert('Deu certo');
+        controller.adiciona();
     });
 }
 else {
