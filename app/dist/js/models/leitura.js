@@ -20,4 +20,7 @@ export class Leitura {
         const nota = parseInt(notaString);
         return new Leitura(nome, data, nota);
     }
+    ehIgual(leitura) {
+        return this.nome === leitura.nome;
+    }
 }
